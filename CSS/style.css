@@ -1,0 +1,407 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ddd;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f5c332;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+main {
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-bottom: 20px;
+}
+.main:not(:first-child) {
+  margin-top: 100px;
+}
+.menu-slide h3 {
+  margin-bottom: 20px;
+}
+.menu-slide2 {
+  position: fixed;
+  background-color: white;
+  right: -500px;
+  height: 100%;
+  width: 400px;
+  top: 90px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.4s ease-in-out;
+  z-index: 800;
+}
+.menu-slide {
+  position: fixed;
+  background-color: white;
+  right: 0;
+  height: 100%;
+  width: 400px;
+  top: 90px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.4s ease-in-out;
+  z-index: 800;
+}
+.menu-slide .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.119);
+}
+#shop {
+  cursor: pointer;
+}
+.menu-slide2 .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.119);
+}
+.card-slide {
+  position: fixed;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 100%;
+  right: -900px;
+  top: 90px;
+  padding: 30px 40px;
+  transition: 0.4s ease-in-out;
+  z-index: 800;
+}
+.card-slide2 {
+  position: fixed;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 100%;
+  right: 0px;
+  top: 90px;
+  padding: 30px 40px;
+  transition: 0.4s ease-in-out;
+  z-index: 800;
+}
+
+.card-slide2 h3 {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.card-slide2 .card-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(0, 0, 0, 0.049);
+  margin-bottom: 20px;
+}
+.card-slide2 .card-item .price {
+  background-color: #f5c332;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-slide2 .card-item h3 {
+  font-size: 14px;
+}
+.card-slide2 .card-item h4 {
+  font-size: 14px;
+}
+.card-slide2 .card-item img {
+  width: 60px;
+  height: 60px;
+  object-position: center;
+}
+
+.card-slide h3 {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.card-slide .card-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(0, 0, 0, 0.049);
+  margin-bottom: 20px;
+}
+.card-slide .card-item .price {
+  background-color: #f5c332;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-slide .card-item h3 {
+  font-size: 14px;
+}
+.card-slide .card-item h4 {
+  font-size: 14px;
+}
+.card-slide .card-item img {
+  width: 60px;
+  height: 60px;
+  object-position: center;
+}
+.short-gallery .images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.short-gallery .images img {
+  width: 100%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+  z-index: 99;
+  background-color: white;
+  position: fixed;
+}
+
+nav ul {
+  display: flex;
+}
+nav ul li {
+  font-size: 14px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-weight: 600;
+}
+nav ul li a {
+  color: rgba(0, 0, 0, 0.645);
+  transition: 0.4s ease-in-out;
+}
+nav ul li .active {
+  color: #f5c332;
+}
+nav ul li a:hover {
+  color: #f5c332;
+}
+nav .icone {
+  background-color: rgba(0, 0, 0, 0.087);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+nav .icone i {
+  font-size: 22px;
+}
+nav .icone .absolute {
+  background-color: #f5c332;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -8px;
+  right: -12px;
+}
+.icone_menu {
+  display: flex;
+  align-items: center;
+}
+#slide {
+  font-size: 32px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.hero-section .hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+.hero-section .radius {
+  position: relative;
+}
+.hero-section .sb-cirkle-1 {
+  position: absolute;
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  border: 25px solid #fff;
+  right: 10%;
+  bottom: 15%;
+  box-shadow: inset 0 3px 6px 0 rgba(0, 0, 0, 0.09),
+    0 3px 6px 0 rgba(0, 0, 0, 0.09);
+  animation: anima3 3s ease-in-out 1s infinite;
+}
+.hero-section .sb-cirkle-2 {
+  position: absolute;
+  background-color: #f5c332;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.09);
+  top: 40%;
+  right: 20%;
+  height: 25px;
+  width: 25px;
+  animation: anima1 2s ease-in-out 3s infinite;
+}
+.hero-section .sb-cirkle-3 {
+  bottom: 10%;
+  left: 8%;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  background-color: #f5c332;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.09);
+  animation: anima1 3s ease-in-out infinite;
+}
+.hero-section .sb-cirkle-4 {
+  position: absolute;
+  top: 15%;
+  right: 30%;
+  width: 15px;
+  height: 15px;
+  background-color: #f5c332;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.09);
+  animation: anima1 3s ease-in-out 4s infinite;
+}
+.hero-section .sb-cirkle-5 {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 10px solid #fff;
+  left: 28%;
+  bottom: 45%;
+  box-shadow: inset 0 3px 6px 0 rgba(0, 0, 0, 0.09),
+    0 3px 6px 0 rgba(0, 0, 0, 0.09);
+  animation: anima3 3s ease-in-out 1.5s infinite;
+}
+.hero-section .sb-pik-1 {
+  position: absolute;
+  width: 10px !important;
+}
+
+@keyframes anima3 {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  75% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes anima1 {
+  50% {
+    transform: translateY(-5px) scale(1.05);
+  }
+
+  0% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+.hero-section .hero img {
+  width: 100%;
+  height: 700px;
+  border-bottom-right-radius: 400px;
+  border-bottom-left-radius: 400px;
+  object-fit: cover;
+  object-position: top;
+}
+.hero-section .hero h6 {
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.052);
+  padding: 10px;
+  width: 20%;
+}
+.hero-section .hero h1 {
+  font-size: 66px;
+  color: #231e41;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+.hero-section .hero p {
+  width: 60%;
+  margin-bottom: 30px;
+  color: rgba(0, 0, 0, 0.789);
+}
+.hero-section .hero .btns {
+  display: flex;
+}
+.hero-section button {
+  cursor: pointer !important;
+
+  margin-right: 10px;
+  border: none;
+  background-color: #f5c332;
+  padding: 10px 28px;
+  font-weight: 600;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  transition: 0.4s ease-in-out;
+}
+#ourmenu-btn:hover {
+  background-color: #f8e559;
+}
+.hero-section .hero .btns button i {
+  margin-right: 14px;
+  font-size: 18px;
+}
+#about-btn {
+  background-color: transparent;
+  padding-left: 6px;
+}
+#about-btn i {
+  background-color: rgba(0, 0, 0, 0.081);
+  border-radius: 50%;
+  padding: 10px;
+}
+.hero-section .hero .btns button span {
+  font-size: 15px;
+}

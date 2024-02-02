@@ -1,0 +1,139 @@
+/* MEHDI's 
+    SECTION */
+
+.text-and-button {
+  /* Aligns the children items in a row direction */
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.textarea {
+  flex: 50%;
+}
+.text-area h1 {
+  font-size: 2.6rem;
+}
+
+.text-area p {
+  margin-top: 1.9rem;
+  color: rgb(156, 154, 154);
+}
+.button-area {
+  display: flex;
+  flex: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: 5rem;
+  justify-content: flex-end;
+}
+
+.button-more-info {
+  background-color: #f5c332;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 12rem;
+  height: 3.2rem;
+}
+
+.button-more-info:hover {
+  background-color: #f8e559;
+}
+
+/* div.gallery {
+      border: 1px solid #ccc;
+    } */
+
+/* div.gallery:hover {
+      border: 1px solid #777;
+    } */
+
+.gallery {
+  position: relative;
+  background-color: rgb(245, 245, 245);
+  z-index: -2;
+  overflow: hidden;
+}
+
+.gallery::after {
+  content: "";
+  position: absolute;
+  background-color: #f5c332;
+  border-radius: 50%;
+  width: 70%;
+  height: 40%;
+  bottom: 35%;
+  left: 15%;
+  border: 3px dotted #fff;
+  box-shadow: 0 0 0 3px #f5c332;
+  filter: blur(5px);
+  transition: 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.responsive:hover .gallery::after {
+  transform: scale(0.9);
+}
+.responsive {
+  padding: 0px;
+  border: 2px solid #fff;
+  width: 16rem;
+}
+
+.responsive:hover img {
+  transform: scale(1.1);
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  transition: ease-in-out 0.5s;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+.cocker-gallery {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.bx {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.bx-right-top-arrow-circle {
+  font-size: 25px;
+  margin-left: -20px;
+}
