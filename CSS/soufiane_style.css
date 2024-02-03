@@ -1,19 +1,9 @@
-section.menu {
-  border: 1px solid green;
-}
-
 section.menu .first {
-  border: 1px solid black;
   position: relative;
-  /* z-index: 2; */
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   margin-bottom: 50px;
-}
-
-section.menu .first .first-div {
-  /* border: 1px solid red; */
 }
 
 section.menu .first .first-div .title-info {
@@ -26,7 +16,6 @@ section.menu .first .first-div h2,
 section.dishes .first .title-info h2 {
   font-size: 40px;
   letter-spacing: -1px;
-  /* border: 1px solid green; */
   margin-bottom: 30px;
 }
 
@@ -38,28 +27,11 @@ section.dishes .first .title-info h2 span {
 section.menu .first .first-div p,
 section.dishes .first .title-info p {
   color: #6f6f87;
-  /* margin: 0; */
   font-size: 15px;
 }
 
-/* section.menu .first .second-div a,
-section.dishes .first .icons-button a {
-  border-radius: 6px;
-} */
-
 section.menu .first .second-div img {
   padding-left: 5px;
-}
-
-/* section.menu .first-div .title-info {
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  align-content: ;
-} */
-
-section.menu .second-div {
-  /* border: 1px solid green; */
 }
 
 section.menu .first .second-div a {
@@ -99,7 +71,8 @@ section.menu .first .second-div a:hover img {
 }
 /* animation */
 
-section.menu .first .second-div img {
+section.menu .first .second-div img,
+section.dishes .first .icons-button .bttn-img img {
   vertical-align: middle;
 }
 
@@ -114,7 +87,6 @@ section.dishes .first a span:nth-child(1) {
 
 section.menu .first .second-div span:nth-child(2),
 section.dishes .first a span:nth-child(2) {
-  /* background-color: #6f6f87; */
   white-space: nowrap;
   line-height: 55px;
   display: inline-block;
@@ -126,7 +98,6 @@ section.dishes .first a span:nth-child(2) {
 /* * - - - - - - - -  */
 
 section.menu .second {
-  border: 1px solid red;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -134,10 +105,8 @@ section.menu .second {
 }
 
 section.menu .second .box {
-  border: 1px solid blue;
-  background-color: #f4f6f8;
+  background-color: #f9fafc;
   width: 48%;
-  /* position: relative; */
 }
 
 .dowara {
@@ -145,6 +114,7 @@ section.menu .second .box {
   width: 100%;
   z-index: -5;
 }
+
 .dowara::after {
   content: "";
   position: absolute;
@@ -156,27 +126,6 @@ section.menu .second .box {
   border-radius: 50%;
   border: 200px solid #f9fafc;
 }
-/* section.menu .second .box .img-div::before {
-  f9fafc
-  content: "";
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  bottom: -5px;
-  left: 15px;
-  color: red;
-} */
-
-/* section.menu .second .box .img-div span {
-  background-color: red;
-  border-radius: 50%;
-  position: relative;
-  width: 30px;
-  height: 30px;
-  bottom: -5px;
-  left: 43px;
-  color: red;
-} */
 
 section.menu .second .box img {
   width: 60px;
@@ -188,24 +137,21 @@ section.menu .second .box:hover img {
 }
 
 section.menu .second .box:hover .img-div::before {
-  background-color: grey;
+  transform: scale(1.3);
 }
 
 section.menu .second .box {
   display: flex;
   align-items: center;
   padding: 30px 37px;
-  /* transition: .3s ease-in-out; */
 }
 
 section.menu .second .box .img-div {
   margin-right: 20px;
-  border: 1px solid blue;
 }
 
 section.menu .second .box .img-div {
   position: relative;
-  /* z-index: 99; */
 }
 
 section.menu .second .box .img-div::before {
@@ -217,7 +163,7 @@ section.menu .second .box .img-div::before {
   left: 17px;
   background-color: #f5c332;
   border-radius: 50%;
-  opacity: 0.6;
+  opacity: 0.7;
   transition: 0.3s linear;
 }
 
@@ -235,31 +181,17 @@ section.menu .second .box .info-div p {
 /* * dishes section */
 /* * - - - - - - - - - - - - - - - - -  - -  */
 
-section.dishes {
-  border: 1px solid green;
-}
-
 section.dishes .first {
-  border: 1px solid blue;
   margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-section.dishes .first .title-info {
-  border: 1px solid red;
-}
-
 section.dishes .first .icons-button {
-  border: 1px solid red;
   display: flex;
   align-items: center;
   gap: 20px;
-}
-
-section.dishes .first .icons-button .icons {
-  border: 1px solid blueviolet;
 }
 
 section.dishes .first .icons-button .icons img {
@@ -273,8 +205,15 @@ section.dishes .first .icons-button .icons img:hover {
   opacity: 1;
 }
 
+section.dishes .first .icons-button .icons img#l:hover {
+  transform: rotate(-50deg);
+}
+
+section.dishes .first .icons-button .icons img#r:hover {
+  transform: rotate(50deg);
+}
+
 section.dishes .first .icons-button a {
-  border: 1px solid brown;
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -290,10 +229,14 @@ section.dishes .first .icons-button a:hover {
   background-color: #f8e559;
 }
 
-section.menu .first .second-div img {
+section.dishes .first .icons-button .bttn-img img {
   position: absolute;
   transform: translate(-50%, -50%);
-  left: 25px;
+  left: 20px;
+}
+
+section.dishes .first .icons-button a:hover img {
+  animation: MoveUpDown 1s linear infinite;
 }
 
 section.dishes .first a span:nth-child(1) {
@@ -308,7 +251,6 @@ section.dishes .first a span:nth-child(1) {
 /* dishes boxes */
 
 section.dishes .second {
-  border: 1px solid red;
   display: flex;
   gap: 20px;
 }
@@ -316,23 +258,14 @@ section.dishes .second {
 section.dishes .second .box {
   display: flex;
   flex-direction: column;
-  /* gap: 5px; */
 }
 
 section.dishes .second .box .img {
-  /* border: 1px solid black; */
   position: relative;
 }
 
-section.dishes .second .box .img-info {
-  /* border: 1px solid blue; */
-}
-
-section.dishes .second .box .descr {
-  border: 1px solid green;
-}
-
 section.dishes .second .box .img img {
+  transition: opacity 0.5s ease-in-out;
   width: 100%;
 }
 
@@ -347,11 +280,21 @@ section.dishes .second .box div .tag {
   font-size: 14px;
 }
 
+section.dishes .second .box div .tag {
+  display: flex;
+  align-items: center;
+}
+
 section.dishes .second .box div #vegan {
   background-color: #9ccc65;
 }
+
 section.dishes .second .box div #hot {
   background-color: #ff5252;
+}
+
+section.dishes .second .box div #sweet {
+  background-color: rgb(56, 118, 199);
 }
 
 section.dishes .second .box .img-info {
@@ -391,8 +334,7 @@ section.dishes .second .box .descr p {
 
 section.dishes .second ul {
   display: flex;
-  border: 1px solid black;
-  gap: 4px;
+  gap: 3px;
 }
 
 section.dishes .second ul li span {
@@ -407,19 +349,14 @@ section.dishes .second ul i#yellow {
   color: #f5c332;
 }
 
-section.dishes .second ul i:not(#yellow) {
-  color: black;
+/* * - - - - - - - - - - - - - - - - -  - -  */
+/* refresh pics */
+
+section.dishes .remove-img {
+  display: none;
+  opacity: 0;
 }
 
-/* bg color align */
-/*  
-    content: "";
-    height: 1200px;
-    width: 1200px;
-    position: absolute;
-    z-index: 0;
-    top: 0;
-    right: -20%;
-    border-radius: 50%;
-    border: 200px solid #b4b7bf;
-*/
+section.dishes .add_image {
+  opacity: 1;
+}

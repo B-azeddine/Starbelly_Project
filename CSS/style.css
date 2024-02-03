@@ -222,6 +222,7 @@ nav .icone {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
   position: relative;
 }
 nav .icone i {
