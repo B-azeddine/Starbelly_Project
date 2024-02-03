@@ -27,7 +27,7 @@ body {
 main {
   padding-left: 13%;
   padding-right: 13%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   height: 100vh;
 }
 .main:not(:first-child) {

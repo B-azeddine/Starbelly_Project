@@ -8,6 +8,7 @@
   border-bottom: 1px solid #f2f3f5;
   right: -200px;
   bottom: 84px;
+  z-index: -1;
 }
 .Footer .col {
   display: flex;
