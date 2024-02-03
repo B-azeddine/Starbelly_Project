@@ -25,9 +25,10 @@ body {
 }
 
 main {
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 13%;
+  padding-right: 13%;
   margin-bottom: 20px;
+  height: 100vh;
 }
 .main:not(:first-child) {
   margin-top: 100px;
@@ -177,17 +178,18 @@ main {
 }
 .short-gallery .images img {
   width: 100%;
+  height: 100%;
 }
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 15px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.16);
   width: 100%;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 13%;
+  padding-right: 13%;
   z-index: 99;
   background-color: white;
   position: fixed;
