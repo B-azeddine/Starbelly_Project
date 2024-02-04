@@ -262,10 +262,10 @@ section.dishes .second .box {
 
 section.dishes .second .box .img {
   position: relative;
+  display: flex;
 }
 
 section.dishes .second .box .img img {
-  transition: opacity 0.5s ease-in-out;
   width: 100%;
 }
 
@@ -352,11 +352,15 @@ section.dishes .second ul i#yellow {
 /* * - - - - - - - - - - - - - - - - -  - -  */
 /* refresh pics */
 
+section.dishes .second .box .img img {
+  transition: 0.8s ease-in-out;
+}
+
 section.dishes .remove-img {
-  display: none;
+  position: absolute;
   opacity: 0;
 }
 
-section.dishes .add_image {
+section.dishes .add-image {
   opacity: 1;
 }
