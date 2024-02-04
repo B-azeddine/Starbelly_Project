@@ -1,0 +1,72 @@
+/* -----------------LOADER-------------- */
+
+.scene {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #2b1f83;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 5000;
+}
+
+.scene i {
+  position: absolute;
+  top: -250px;
+  background: rgba(255, 255, 255, 0.5);
+  animation: animatestars linear infinite;
+}
+
+@keyframes animatestars {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(200vh);
+  }
+}
+
+.scene .ourlogoSchool {
+  position: absolute;
+  top: 130px;
+}
+.scene .rocket {
+  position: relative;
+  animation: animate 0.2s ease infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    transform: translateY(-2px);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+}
+
+.scene .rocket::before {
+  content: "";
+  position: absolute;
+  bottom: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 200px;
+  background: linear-gradient(#ff4200, #fa0, transparent);
+}
+
+.scene .rocket::after {
+  content: "";
+  position: absolute;
+  bottom: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 200px;
+  background: linear-gradient(#00d0ff, transparent);
+  filter: blur(20px);
+}
